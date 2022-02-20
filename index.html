@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo list</title>
+    <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" type="text/css" href = "style.css">
+</head>
+<body>
+    <div class = "Nav_bar">
+        <img src="icon.png"  alt="#" id = "image">
+        <h1 id = "t1">TO-DO LIST</h1>
+    </div>
+    <div class = "curr">
+        <div id = "curr_1">
+           <h1>Things To-Do</h1>
+        </div>
+        <div id="filter">
+            <input type="radio" id = "All" name = "filter" value = "1" onclick="myfunc2(1)" checked>
+            <label for="All">All</label>
+            <input type="radio" id = "Completed" name = "filter" value = "2" onclick="myfunc2(2)">
+            <label for="Completed">Completed</label>
+            <input type="radio" id = "Incomplete" name = "filter" value = "3" onclick="myfunc2(3)">
+            <label for="Incomplete">Incomplete</label>
+        </div>
+        <div>
+            <div id = "list">
+                <p>No Tasks!</p>
+                <!-- <div class = "tasks">
+                    <p>Meeting with boss</p>
+                    <p>Deadline : <span>Date</span></p>
+                    <button id = "done">Mark as Done</button>
+                    <button id = "del">  Delete</button>
+                    <button id = "edit"> Edit</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="create">
+
+        <h1 id = "addt">Add task</h1>
+        <form class = "frm_1">
+            <label for="Tname">Task Name : </label><br>
+            <input type="text" id = "Tname" name = "Tname" required><br>
+            <label for="Dead">Deadline : </label> <br>
+            <input type="date" id = "Dead" name = "Dead" required><br>
+            <div class = 'btns'>
+                <button id = "submit">Add task</button>
+                <input type="reset">
+            </div>
+        </form>
+    </div>
+    <div class = "bottom">
+        <p id = "Creater">Copyright &copy; 2021 Khushi Kapoor</p>
+        <a href="https://www.facebook.com/people/Khushi-Kapoor/100056499368651/"target="_blank" rel="noopener noreferrer"><img src="1.png" ></a>
+           <a href=https://www.instagram.com/2khushi_kapoor1/ target="_blank" rel="noopener noreferrer"><img src="3.png"></a>
+           <a href=https://twitter.com/2khushi_kapoor1 target="_blank" rel="noopener noreferrer"><img src="5.png"></a>
+           <a href=https://in.linkedin.com/in/khushi-kapoor-14118a201 target="_blank" rel="noopener noreferrer"><img src="4.png"></a>
+           <a href=https://wa.me/918447375251 target="_blank" rel="noopener noreferrer"><img src="2.png"></a>
+					 <a href=https://github.com/khushi-kapoor target="_blank" rel="noopener noreferrer"><img src="6.png"></a>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
